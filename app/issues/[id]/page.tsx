@@ -14,7 +14,7 @@ const IssueDetailPage = async ({ params: { id } }: Props) => {
   return (
     <div>
       <Heading>{issue.title}</Heading>
-      <Flex gap="3" my="2">
+      <Flex gap="3" my="2" align="center">
         <IssueStatusBadge status={issue.status} />
         <Text>{issue.createdAt.toDateString()}</Text>
       </Flex>
